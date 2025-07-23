@@ -1,0 +1,4 @@
+AirportCode,WindSpeed,Visibility,Precipitation
+KSQL,10,9.0,None
+KSTS,22,4.0,Rain
+KMRY,6,10.0,None
