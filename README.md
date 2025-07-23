@@ -1,1 +1,3 @@
-# aviation-flight-planning-simulator
+I am a commercial and agricultural pilot with experience in flight planning, fuel optimization, and real-time meteorological adaptation. This repository presents a representative simulation of the operational logic applied during pre-flight and in-flight decision-making. While the data and structure have been adapted for demonstration, the workflow reflects the measured judgment and procedural clarity required in active aviation environments.
+
+The contents are designed to simulate the kind of planning decisions routinely made in Part 135 and Part 137 operations, including route selection, fuel margin analysis, and alternate airport logic under changing weather conditions.
