@@ -1,24 +1,22 @@
 # Aviation Flight Planning Simulator
 
-I am a commercial and agricultural pilot with nearly two decades of experience navigating varied aircraft under dynamic conditions across California and the western United States. I have worked in both piston and turbine-class platforms, including the Citation CJ3, conducting flight planning across a broad range of operational contexts—regional trips, agricultural missions, and business-class legs under IFR and VFR.
+I am a commercial and agricultural pilot with nearly two decades of experience operating across California and the western United States. I have flown piston and turbine-class aircraft across varied terrain and weather systems, including repeated CJ3 missions into and out of Southern California airspace. The Citation CJ3’s performance profile—its fuel consumption, routing flexibility, and cruise capabilities—has informed the technical framework presented here.
 
-The modeling work represented here reflects an interest in documenting the judgment behind those decisions: the route planning, the weather assessments, and the structured fuel logic required to operate effectively. I do not claim that this simulation mirrors full-scale flight dispatch architecture, nor is it intended for use in active operations. What it does reflect is the procedural mindset required to navigate aircraft responsibly under real-world constraints.
+This repository offers a simulation of flight planning logic using Python. It draws from routine operational procedures, including wind and precipitation adjustments, fuel burn calculations, and visibility-based arrival assessments. The example flight modeled here reflects a CJ3 mission from Oakland International (KOAK) to Van Nuys Airport (KVNY), incorporating meteorological factors and fuel planning thresholds in a way that mirrors structured cockpit decision-making.
 
-The notebooks included simulate routing logic, fuel consumption modeling, weather interpretation, and visibility thresholds adapted from experience across both controlled and uncontrolled airspace. Each simulation is structured to document the core decisions that precede flight—not just airspeed and fuel burn, but weather impact and visibility risk. 
-
-I have found the opportunity to model these workflows—however simplified—instructive. The act of documenting operational logic in code has allowed me to approach aviation from a new angle: one that is quiet, deliberate, and structured. That effort is what this repository represents.
+The work is not intended for dispatch use, nor is it a substitute for certified planning systems. But in documenting how turbine-class aircraft are prepared for regional flights—including the assumptions, estimates, and risk checks—I have found the process both technically useful and personally reflective. These notebooks don’t simply recreate data—they reorganize judgment into procedural form.
 
 ## Repository Structure
 
 - `planning/`:  
-   └─ `flight_plan_generator.ipynb`: CJ3 route simulation from San Carlos to Monterey  
-   └─ `cj3_flight_plan_koak_kvny.ipynb`: CJ3 fuel modeling from Oakland to Van Nuys with visibility risk  
+   └─ `cj3_flight_plan_koak_kvny.ipynb`: Citation CJ3 routing logic, adjusted fuel calculations, and visibility planning for KOAK to KVNY  
 - `data/`:  
-   └─ `aircraft_profiles.csv`: Performance metrics for selected aircraft types  
-   └─ `sample_weather_forecast.csv`: Simulated weather input for METAR-style planning  
+   └─ `aircraft_profiles.csv`: Structured performance data for representative aircraft types  
+   └─ `sample_weather_forecast.csv`: Simplified METAR-style conditions for planning inputs  
 - `docs/`:  
-   └─ `pilot_workflow_notes.md`: Narrative description of flight logic applied during agricultural and commercial missions
+   └─ `pilot_workflow_notes.md`: Written overview of flight procedures and decision structure adapted from operational experience
 
 ## Objective
 
-To simulate and document the structure of flight planning logic used in general aviation and regional air operations. While simplified for demonstration, the framework reflects the kind of discipline and measured reasoning used by working pilots in active environments.
+To restructure flight planning logic in technical form, using code to reflect the kind of measured preparation involved in route planning, fuel modeling, and weather impact assessment. While simplified, the simulation remains grounded in experience and attentive to detail.
+
