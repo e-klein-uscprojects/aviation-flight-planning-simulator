@@ -1,21 +1,24 @@
 # Aviation Flight Planning Simulator
 
-I am a commercial and agricultural pilot with nearly two decades of experience supporting flight operations across varied geographies, flight categories, and meteorological conditions. This repository presents a simulation of the workflow logic routinely applied during active pre-flight planning and in-flight operational adjustment. While the content has been simplified and adapted for demonstration, the structure reflects the clarity and discipline required to fly safely, efficiently, and professionally.
+I am a commercial and agricultural pilot with nearly two decades of experience navigating varied aircraft under dynamic conditions across California and the western United States. I have worked in both piston and turbine-class platforms, including the Citation CJ3, conducting flight planning across a broad range of operational contexts—regional trips, agricultural missions, and business-class legs under IFR and VFR.
 
-The opportunity to document this work in technical form has been both rewarding and instructive. I believe the logic and structure represented here mirror the judgment and procedures exercised daily by pilots in the field—whether navigating remote agricultural routes, coordinating with ATC in congested airspace, or assessing fuel margins under shifting weather systems. 
+The modeling work represented here reflects an interest in documenting the judgment behind those decisions: the route planning, the weather assessments, and the structured fuel logic required to operate effectively. I do not claim that this simulation mirrors full-scale flight dispatch architecture, nor is it intended for use in active operations. What it does reflect is the procedural mindset required to navigate aircraft responsibly under real-world constraints.
 
-I appreciate the utility of structured decision logic. I also value the chance to contribute meaningfully to the broader dialogue surrounding technical literacy and aviation analytics.
+The notebooks included simulate routing logic, fuel consumption modeling, weather interpretation, and visibility thresholds adapted from experience across both controlled and uncontrolled airspace. Each simulation is structured to document the core decisions that precede flight—not just airspeed and fuel burn, but weather impact and visibility risk. 
 
-## Project Overview
-
-A representative simulation of flight planning and operational workflow logic using Python and aviation data structure. Components include routing logic, fuel consumption modeling, weather interpretation, and airframe-based decision matrices. While simplified, each segment reflects the kind of logic adapted from real-world pilot experience.
+I have found the opportunity to model these workflows—however simplified—instructive. The act of documenting operational logic in code has allowed me to approach aviation from a new angle: one that is quiet, deliberate, and structured. That effort is what this repository represents.
 
 ## Repository Structure
 
-- `planning/`: Simulated notebook for flight planning calculations  
-- `data/`: Sample datasets for weather conditions and aircraft profiles  
-- `docs/`: Operational notes and contextual summaries of pilot logic  
+- `planning/`:  
+   └─ `flight_plan_generator.ipynb`: CJ3 route simulation from San Carlos to Monterey  
+   └─ `cj3_flight_plan_koak_kvny.ipynb`: CJ3 fuel modeling from Oakland to Van Nuys with visibility risk  
+- `data/`:  
+   └─ `aircraft_profiles.csv`: Performance metrics for selected aircraft types  
+   └─ `sample_weather_forecast.csv`: Simulated weather input for METAR-style planning  
+- `docs/`:  
+   └─ `pilot_workflow_notes.md`: Narrative description of flight logic applied during agricultural and commercial missions
 
 ## Objective
 
-To document the structure of flight preparation and operational modeling used in general aviation and aerial applications. This repository reflects the procedures and decision frameworks used during agricultural missions, commercial operations, and low-altitude route planning under variable weather constraints. It is a technical exercise grounded in applied experience.
+To simulate and document the structure of flight planning logic used in general aviation and regional air operations. While simplified for demonstration, the framework reflects the kind of discipline and measured reasoning used by working pilots in active environments.
